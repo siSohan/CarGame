@@ -29,7 +29,7 @@ let keys = {
   ArrowUp: false,
   ArrowDown: false,
 };
-down.addEventListener("touchstart", () =>{ (keys.ArrowDown = true));
+down.addEventListener("touchstart", () => (keys.ArrowDown = true));
 down.addEventListener("touchend", () => (keys.ArrowDown = false));
 up.addEventListener("touchstart", () => (keys.ArrowUp = true));
 up.addEventListener("touchend", () => (keys.ArrowUp = false));

@@ -29,14 +29,14 @@ let keys = {
   ArrowUp: false,
   ArrowDown: false,
 };
-down.addEventListener("mousedown", () => (keys.ArrowDown = true));
-down.addEventListener("mouseup", () => (keys.ArrowDown = false));
-up.addEventListener("mousedown", () => (keys.ArrowUp = true));
-up.addEventListener("mouseup", () => (keys.ArrowUp = false));
-left.addEventListener("mousedown", () => (keys.ArrowLeft = true));
-left.addEventListener("mouseup", () => (keys.ArrowLeft = false));
-right.addEventListener("mousedown", () => (keys.ArrowRight = true));
-right.addEventListener("mouseup", () => (keys.ArrowRight = false));
+down.addEventListener("touchstart", () =>{ (keys.ArrowDown = true));
+down.addEventListener("touchend", () => (keys.ArrowDown = false));
+up.addEventListener("touchstart", () => (keys.ArrowUp = true));
+up.addEventListener("touchend", () => (keys.ArrowUp = false));
+left.addEventListener("touchstart", () => (keys.ArrowLeft = true));
+left.addEventListener("touchend", () => (keys.ArrowLeft = false));
+right.addEventListener("touchstart", () => (keys.ArrowRight = true));
+right.addEventListener("touchend", () => (keys.ArrowRight = false));
 
 mobile.addEventListener("click", () => {
   select.classList.add("none");

@@ -70,19 +70,19 @@ function start() {
   Elmntcreation();
   setTimeout(() => {
     player.speed += 2;
-  }, 40000);
+  }, 60000);
   setTimeout(() => {
     player.speed += 2;
     player.controle += 1;
-  }, 12000);
+  }, 120000);
   setTimeout(() => {
     player.speed += 2;
     player.controle += 1;
-  }, 20000);
+  }, 200000);
   setTimeout(() => {
     player.speed += 2;
     player.controle += 1;
-  }, 35000);
+  }, 350000);
   window.requestAnimationFrame(playGame);
 }
 //Default settings for start
